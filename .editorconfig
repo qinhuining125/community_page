@@ -1,0 +1,16 @@
+# [*.{js,jsx,ts,tsx,vue}]
+# indent_style = space # 空格缩进
+# indent_size = 4  # 缩进空格为4个
+# trim_trailing_whitespace = true # 不保留行末的空格
+# insert_final_newline = true # 文件末尾添加一个空行
+
+root = true             # 表示 .editorconfig 是否生效
+[*]                     # 匹配的文件类型
+#  [*.{js,jsx,ts,tsx,vue}]  表示只对 js.jsx.ts.tsx.vue后缀的文件生效
+charset = utf-8         # 字符集
+end_of_line = lf        #换行符lf
+tab_width = 4           # tab为4个空格
+indent_style = tabs     # 可选 space
+indent_size = 4         # 缩进大小4个空格
+insert_final_newline = true     # 是否在文件的最后插入一个空行
+trim_trailing_whitespace = true # 是否删除行尾的空格

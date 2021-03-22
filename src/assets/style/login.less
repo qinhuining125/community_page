@@ -1,0 +1,95 @@
+.loginBox {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/login_bj.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    .loginLogo{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff;
+        height: 8.5vh;
+        background: url(../images/loginTopBg.png) no-repeat center;
+        background-size: 100% 8.5vh;
+        img{
+            display: inline-block;
+            height: 6vh;
+            margin-top: 1.2vh;
+        }
+    }
+    .loginForm{
+        background: url(../images/loginFormBg.png) no-repeat;
+        background-size: 100% 100%;
+        width:22vw;
+        padding: 30px;
+        /deep/.iconfont{
+            font-size:24px;
+            color:#23d1d1;
+        }
+        
+        .el-form-item{
+            margin-bottom:20px;
+        }
+        .el-form-item.code{
+            margin-bottom:10px;
+        }
+        .code img{
+            height:40px;
+            width:100%;
+        }
+        /deep/.el-input--prefix .el-input__inner{
+            padding-left:40px;
+        }
+        /deep/.el-input__inner{
+            color:#fff;
+            background-color: rgba(29,30,36,.7);
+            border:none;
+        }
+        .submitBtn{
+            display: block;
+            width:100%;
+            background:#23e6fa;
+            border:none;
+            line-height:38px;
+            padding:0;
+            font-size:16px;
+        }
+        .rememberPassword{
+            padding:0 10px;
+            text-align: left;
+            margin-bottom:15px;
+            .el-checkbox{
+                color:#fff;
+            }
+            /deep/.el-checkbox__inner{
+                border:1px solid rgba(255,255,255,.4);
+                background:none;
+            }
+            /deep/.el-checkbox__input.is-checked+.el-checkbox__label{
+                color:#fff;
+            }
+        }
+        /deep/.el-checkbox__input.is-checked .el-checkbox__inner,
+        /deep/.el-checkbox__input.is-indeterminate .el-checkbox__inner{
+            background-color: #0c8184;
+            border-color: #0c8184;
+        }
+        .copyright{
+            text-align: center;
+            color: #939594;
+            margin: 0;
+        }
+    }
+    @media(max-width:1200px){
+        .loginForm{
+            padding: 30px;
+            width: 300px!important;
+        }
+    }
+}
